@@ -9,6 +9,8 @@
   let dataPokemon: IPokemonData;
   let loading = true;
 
+  
+
   onMount(async () => {
     HttpRequest<IPokemonData>(`${BASE_URL}/${id}`)
       .then((res) => res.parsedBody)
